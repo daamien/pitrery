@@ -1,4 +1,8 @@
 version: 2
+
+machine:
+  timezone: Europe/Paris
+
 jobs:
   test:
     steps:
