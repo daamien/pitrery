@@ -4,7 +4,8 @@ jobs:
   build:
     machine: true
     steps:
-      - checkout
+      - checkout 
+      - run: apt-get install postgresql  
       - run: su postgres -c './pitrery help'
       - run: su postgres -c './pitrery check'
       - run: su postgres -c './pitrery backup'
