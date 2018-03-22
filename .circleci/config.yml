@@ -1,0 +1,7 @@
+version: 2
+jobs:
+  test:
+    steps:
+      - checkout
+      - run: su postgres -c './pitrery help'
+      - run: su postgres -c './pitrery check'  
