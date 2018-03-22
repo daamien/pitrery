@@ -4,4 +4,6 @@ jobs:
     steps:
       - checkout
       - run: su postgres -c './pitrery help'
-      - run: su postgres -c './pitrery check'  
+      - run: su postgres -c './pitrery check'
+      - run: su postgres -c './pitrery backup'
+      - run: su postgres -c './pitrery list'  
